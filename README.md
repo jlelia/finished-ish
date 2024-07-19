@@ -1,2 +1,5 @@
 # finished-ish
 This repository contains working scripts I've written. I say finished-ish because (as of 7/2024) I am new to programming and may have made mistakes that cause the code to not work for others despite working for me. Additionally, I plan to improve my code as I become a better programmer :D
+
+# CellProfiler to xy-plot pipeline for 96-well cell viability assays (7/19/24)
+My first project is to automate the unwieldy process we have in my lab for going from images of 96-well plates to polished graphs displaying cell survival data. Normally, we would take images, count nuclei using CellProfiler, take the .csv file from CellProfiler and transform it in Excel, normalize it in Excel or GraphPad, and finally plot it in Graphpad. Needless to say, this is worthy of automation. My script "nuclei_count_to_xyplot_local_v1.0.0" works on my computer, but would need some tweaking with file directories, etc. to work on your computer. I plan on turning this into a fully packaged .exe file sometime in the near future! Hopefully it is well-annotated enough for someone with a bit of Python experience to adapt it as-is in the meantime.
