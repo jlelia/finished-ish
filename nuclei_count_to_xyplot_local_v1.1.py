@@ -47,13 +47,7 @@ def select_image_dir():
 # Create main window
 root = ThemedTk(theme="black", themebg=True)
 
-# Create drug label and entry field
-label = ttk.Label(root, text="Enter nine doses (M), separated by tab:")
-label.pack()
-entry = ttk.Entry(root)
-entry.pack()
-
-# Create plot labels and their entry fields
+# Create label and drug inputs
 label1 = ttk.Label(root, text = "Enter the title of the graph (include drug used):")
 label1.pack()
 entry1 = ttk.Entry(root)
@@ -66,6 +60,10 @@ label3 = ttk.Label(root, text = "Enter the name of the cell condition in rows E-
 label3.pack()
 entry3 = ttk.Entry(root)
 entry3.pack()
+label = ttk.Label(root, text="Enter nine doses (M), separated by tab:")
+label.pack()
+entry = ttk.Entry(root)
+entry.pack()
 
 # Create buttons for selecting directories and files
 image_dir_button = ttk.Button(root, text="Select Image Directory", command=select_image_dir)
